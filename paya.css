@@ -11,7 +11,8 @@
     margin-top: 20px;
 }
 #accountform_form{
-    background: #ff;
+    background: transparent;
+    border: 0;
     font-family: 'Figtree', sans-serif;
     font-size: 16px;
 }
@@ -22,4 +23,24 @@
 
 .accountform_field {
     margin-bottom: 16px !important;
+}
+
+#accountform_field_title,
+#accountform_field_account_holder_name,
+#accountform_field_account_type,
+#accountform_field_is_company,
+#accountform_field_routing,
+#accountform_field_account_number,
+#accountform_field_second_account_number,
+#accountform_field_ach_sec_code,
+#accountform_field_billing_address,
+#accountform_field_billing_city,
+#accountform_field_billing_state,
+#accountform_field_billing_zip,
+#accountform_field_phone,
+#accountform_field_personalidentity
+{
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px; 
 }
