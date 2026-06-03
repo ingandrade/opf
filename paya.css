@@ -15,3 +15,7 @@
     font-family: 'Figtree', sans-serif;
     font-size: 16px;
 }
+
+#accountform_col_1.ACH, #accountform_col_2.ACH {
+    width: 100% !important;
+}
