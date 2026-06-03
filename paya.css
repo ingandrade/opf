@@ -19,3 +19,7 @@
 #accountform_col_1.ACH, #accountform_col_2.ACH {
     width: 100% !important;
 }
+
+.accountform_field {
+    margin-bottom: 16px !important;
+}
