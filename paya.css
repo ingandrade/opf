@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
 
+#accountform_form{
 /* Base */
 .accountForm {
   font-family: 'Figtree', sans-serif;
@@ -125,4 +126,5 @@
 /* Has error */
 .has-error {
   border: 1px solid #dc2626 !important;
+}
 }
