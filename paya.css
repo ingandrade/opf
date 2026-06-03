@@ -37,8 +37,8 @@
 #accountform_field_billing_city,
 #accountform_field_billing_state,
 #accountform_field_billing_zip,
-#accountform_field_phone,
-#accountform_field_personalidentity
+#accountform_field_billing_phone,
+#accountform_fields_personalidentity
 {
     display: flex !important;
     flex-direction: column;
