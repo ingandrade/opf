@@ -42,7 +42,6 @@
 }
 
 #accountform_col_2.ACH {
-    border-top: 1px solid #D4D4D4;
     padding: 0;
     align-items: flex-start;
     align-self: stretch;
@@ -103,7 +102,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 1rem;
-  border-top: 1px solid #D4D4D4;
   padding-top: 1rem;
   margin-top: 1rem;
 }
