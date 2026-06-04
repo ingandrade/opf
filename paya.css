@@ -44,6 +44,17 @@
     padding: 0 !important;
 }
 
+#accountform_field_account_type,
+#accountform_field_is_company {
+  grid-column: 1 / -1;
+}
+
+#accountform_fields_ach {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+
 #account_field_billing_address {
     margin-top: 24px;
 }
