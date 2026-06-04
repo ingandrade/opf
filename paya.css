@@ -27,6 +27,12 @@
     color: #171717;
 }
 
+#accountform_col_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+
 #accountform_col_1.ACH {
     margin-bottom: 24px;
     display: grid !important;
@@ -49,7 +55,7 @@
 
 #accountform_field_account_type,
 #accountform_field_is_company {
-  grid-column: 1 / -1;
+  grid-column: auto; 
 }
 
 #accountform_fields_ach {
@@ -213,4 +219,23 @@
 #accountform_button_submit:hover {
     background-color: #002f5c;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #accountform_col_1.ACH {
+    grid-template-columns: 1fr !important;
+  }
+
+  #accountform_fields_ach {
+    grid-template-columns: 1fr !important;
+  }
+
+  #accountform_field_account_type,
+  #accountform_field_is_company,
+  #accountform_field_routing,
+  #accountform_field_account_number,
+  #accountform_field_second_account_number,
+  #accountform_field_ach_sec_code {
+    grid-column: 1 / -1 !important;
+  }
 }
