@@ -31,6 +31,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 1rem;
+  border-bottom: 1px solid #D4D4D4;
 }
 
 #accountform_col_1.ACH {
@@ -48,7 +49,7 @@
 }
 
 #accountform_col_1.ACH, #accountform_col_2.ACH {
-    width: 100% !important;
+    width: 100%;
     display: block;
     padding: 0 !important;
 }
@@ -69,7 +70,7 @@
     margin-top: 24px;
 }
 
-#accountform_field_billing_address::before {
+#accountform_col_1::after {
   content: 'Account Holder Information';
   display: block;
   font-family: 'Figtree', sans-serif;
@@ -79,6 +80,22 @@
   line-height: 120%;
   margin-bottom: 0.5rem;
   margin-top: 24px;
+}
+
+#accountform_col_2.ACH {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+  border-top: 1px solid #D4D4D4;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+#accountform_fields_personalidentity {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
 }
 
 .accountform_field {
@@ -221,13 +238,13 @@
     cursor: pointer;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #accountform_col_1.ACH {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
   #accountform_fields_ach {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
   #accountform_field_account_type,
@@ -236,6 +253,6 @@
   #accountform_field_account_number,
   #accountform_field_second_account_number,
   #accountform_field_ach_sec_code {
-    grid-column: 1 / -1 !important;
+    grid-column: 1 / -1;
   }
-} */
+} 
