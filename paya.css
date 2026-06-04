@@ -82,6 +82,23 @@
   margin-top: 24px;
 }
 
+#accountform_fields_cc {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+
+#accountform_field_account_number {
+  grid-column: 1 / -1;
+}
+
+#accountform_field_exp_month,
+#accountform_field_exp_year {
+  grid-column: auto;
+}
+
+
 #accountform_col_2.ACH {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -110,6 +127,7 @@
 #accountform_field_account_number,
 #accountform_field_second_account_number,
 #accountform_field_exp_month,
+#accountform_field_exp_year,
 #accountform_field_ach_sec_code,
 #accountform_field_billing_address,
 #accountform_field_billing_city,
@@ -133,6 +151,7 @@
 #accountform_field_account_number_label,
 #accountform_field_second_account_number_label,
 #accountform_field_exp_month_label,
+#accountform_field_exp_year_label,
 #accountform_field_ach_sec_code_label,
 #accountform_field_billing_address_label,
 #accountform_field_billing_city_label,
@@ -247,12 +266,31 @@
     grid-template-columns: 1fr;
   }
 
+  #accountform_fields_cc {
+    grid-template-columns: 1fr;
+  }
+
+  #accountform_col_2.ACH {
+    grid-template-columns: 1fr;
+  }
+
+  #accountform_fields_personalidentity {
+    grid-template-columns: 1fr;
+  }
+
   #accountform_field_account_type,
   #accountform_field_is_company,
   #accountform_field_routing,
   #accountform_field_account_number,
   #accountform_field_second_account_number,
-  #accountform_field_ach_sec_code {
+  #accountform_field_ach_sec_code,
+  #accountform_field_exp_month,
+  #accountform_field_exp_year,
+  #accountform_field_billing_address,
+  #accountform_field_billing_city,
+  #accountform_field_billing_state,
+  #accountform_field_billing_zip,
+  #accountform_field_billing_phone {
     grid-column: 1 / -1;
   }
-} 
+}
