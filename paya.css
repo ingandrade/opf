@@ -1,19 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
 #accountform_title{
     font-family: 'Figtree', sans-serif;
     color: transparent;
-    display: none;
 }
+
+#accountform_title::before {
+    content: "Bank Information";
+    font-size: 18px;
+    font-family: 'Figtree', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
 #accountform_form{
     background: transparent;
     border: 0;
     font-family: 'Figtree', sans-serif;
     font-size: 16px;
     font-weight: 600 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
+
+#accountform_col_1.ACH {
+    margin-bottom: 24px;
+}
+
+#accountform_col_2.ACH {
+    border-top: 1px solid #D4D4D4;
+    padding: 0;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
 #accountform_col_1.ACH, #accountform_col_2.ACH {
     width: 100% !important;
+    display: block !important;
+    padding: 0 !important;
+}
+
+#account_field_billing_address {
+    margin-top: 24px;
+}
+
+#accountform_field_billing_address::before {
+  content: 'Account Holder Information';
+  display: block;
+  font-family: 'Figtree', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 0.5rem;
+  margin-top: 24px;
 }
 
 .accountform_field {
