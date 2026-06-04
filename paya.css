@@ -12,6 +12,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+    color: #171717;
 }
 
 #accountform_form{
@@ -23,6 +24,7 @@
     width: 100% !important;
     max-width: 100% !important;
     overflow-x: hidden;
+    color: #171717;
 }
 
 #accountform_col_1.ACH {
@@ -101,12 +103,14 @@
 #accountform_field_dob_year-label,
 #accountform_field_ssn4_label
 {
+    font-family: 'Figtree', sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 0%;
     flex: 100%;
     margin-bottom: 0.375rem;
+    color: #171717;
 }
 
 #title,
@@ -127,11 +131,12 @@
 #dl_number,
 #dob_year,
 #ssn4 {
+    font-family: 'Figtree', sans-serif;
     width: 100%;
     height: 48px;
     padding: 0.6875rem 0.75rem;
-    font-size: 1rem;
-    font-weight: "normal";
+    font-size: 14px;
+    font-weight: normal;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
@@ -141,12 +146,33 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border: 1px solid #6c7079;
     margin-bottom: 0.25rem;
-    color: #14293a;
+}
 
+#title:focus-visible,
+#account_holder_name:focus-visible,
+#account_number:focus-visible,
+#exp_month:focus-visible,
+#exp_year:focus-visible,
+#routing:focus-visible,
+#second_account_number:focus-visible,
+#ach_sec_code:focus-visible,
+#billing_address:focus-visible,
+#billing_city:focus-visible,
+#billing_state:focus-visible,
+#billing_zip:focus-visible,
+#billing_phone:focus-visible,
+#dl_state:focus-visible,
+#dl_number:focus-visible,
+#dob_year:focus-visible,
+#ssn4:focus-visible {
+  border-color: #14293a;
+  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.25);
+  outline: none;
 }
 
 #accountform_button_close,
 #accountform_button_submit {
+    font-family: 'Figtree', sans-serif;
     width: 100%;
     margin-top: 0.5rem;
     background: #005eb8;
@@ -165,4 +191,11 @@
     justify-content: center;
     border-style: solid;
     font-weight: 600;
+    cursor: pointer;
+}
+
+#accountform_button_close:hover,
+#accountform_button_submit:hover {
+    background-color: #002f5c;
+    cursor: pointer;
 }
